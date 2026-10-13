@@ -1,0 +1,17 @@
+西条酒蔵めぐり｜GitHub Pages CSS・画像パス修正版
+
+このZIPでは、GitHub PagesのプロジェクトURL /ud-summer/ でも使えるように、サイト内部のルート絶対パス（/assets/...、/map.htmlなど）を相対パスに直しました。メインCSSはHTML内にも入っており、さらに共通CSSを ./compact-ui.css と ./corporate-simple.css から読み込みます。
+
+アップロード手順
+1. ZIPをダウンロードし、PCで「すべて展開」します。
+2. GitHubの ud-summer リポジトリを開き、main ブランチの一番上（リポジトリ直下）へ移動します。
+3. Add file → Upload files を選びます。
+4. 展開したフォルダの「中身」をすべてアップロードします。ZIP自体や外側のフォルダはアップロードしません。
+5. index.html、map.html、compact-ui.css、corporate-simple.css、assetsフォルダが同じ階層に見えるようにします。
+6. Commit changes で保存します。
+7. Settings → Pages で main / (root) を公開元に設定します。
+8. 数分待ってから Ctrl+F5 で再読み込みします。
+
+確認事項
+・HTML内のCSS構文、ローカルリンク参照先、主要ファイルを静的検査しました。
+・この環境から公開中のGitHub Pagesへ接続できないため、公開先への反映や表示そのものは未確認です。
